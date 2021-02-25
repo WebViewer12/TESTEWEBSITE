@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WorldWeb</title>
+</head>
+<body>
+    <header class="header-conteiner">
+    <div class="header-items"> 
+        <ul>
+            <a href="#"><h1 class="logo">WorldWeb</h1>
+            <li><a href="#conteiner-inicio">Inicio</a></li>
+            <li><a href="#logo-fotos">Fotos</a></li>
+            <li><a href="#conteiner-contato">Contato</a></li>
+            <li><a href="#conteiner-contato">Sobre</a></li>
+        </ul>
+    </div>
+    </header>
+    <section class="conteiner-inicio" id="conteiner-inicio">
+        <div class="conteiner-items-inicio">
+            <h1>O MELHOR TESTE NESSE SITE</h1>
+            <p>INICIO TEM UM FIM...</p>
+            <a href="#logo-fotos" class="button-inicio">Fotos</a>
+        </div>
+    </section>
+    <h1 class="logo-fotos" id="logo-fotos">Fotos</h1>
+    <div class="fotos-section">
+        <img src="https://www.donaceres.com.br/arquivos/PRODUTOS/1421565879704320917/1_G_SEMENTE-DE-FEIJO-PRETO-BRS-ESTEIO.jpg" alt="Feijões">
+        <img src="https://www.donaceres.com.br/arquivos/PRODUTOS/1421565879704320917/1_G_SEMENTE-DE-FEIJO-PRETO-BRS-ESTEIO.jpg" alt="Feijões">
+        <img src="https://www.donaceres.com.br/arquivos/PRODUTOS/1421565879704320917/1_G_SEMENTE-DE-FEIJO-PRETO-BRS-ESTEIO.jpg" alt="Feijões">
+        <img src="https://www.donaceres.com.br/arquivos/PRODUTOS/1421565879704320917/1_G_SEMENTE-DE-FEIJO-PRETO-BRS-ESTEIO.jpg" alt="Feijões">
+    </div>
+    <div class="conteiner-contato" id="conteiner-contato">
+    <h1 class="logo-fotos">Contato</h1>
+    <h1>Email:</h1>
+    <p>luanjosestael1055@gmail.com</p>
+    </div>
+    <h1 class="logo-fotos" id="logo-fotos">Contato</h1>
+    <div class="conteiner-sobre">
+        <h1>UM TESTE DE UM SITE PARA EU TRENAR, PRIMEIROS MESÊS FIZ ISSO,
+            ESTOU AVANÇANDO EM POUCO EM POUCO,
+            OBRIGADO POR VER
+        </h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $("a").click(function () {
+            console.log(this);
+            $('html, body').animate({
+                scrollTop: ($(this.hash).offset().top)
+            }, 500)
+        })
+    </script>
+</body>
+</html>
